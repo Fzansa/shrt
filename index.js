@@ -14,7 +14,7 @@ const PORT = 8000;
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({ origin: 'https://urlji.netlify.app', credentials: true }));
 connectToMongoDB(process.env.MONGODB_URL);
 
 
